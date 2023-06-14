@@ -1,0 +1,92 @@
+* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background:url("bg.jpg");
+    color: black;
+}
+
+header {
+    background:linear-gradient(grey,white);
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+nav {
+    background:rgb(127, 195, 250);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #080808bd;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-image: url("img\ bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.highlight {
+    font-weight:bolder;
+    font-size: 17px;
+    color: rgb(9, 9, 9);
+    
+  }
+img{
+    width:150px;
+    height:200px;
+    position: absolute;
+    top: 200px;
+    right: 0;
+  
+  transform: translate(-50%, 0); 
+}
+table{
+    border-collapse: collapse;
+    
+}
+th,td{
+    border:1px solid black;
+    padding:5px;
+}
+
+
+footer {
+    background-color:grey ;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px
+    }
+}
